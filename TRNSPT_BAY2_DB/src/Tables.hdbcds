@@ -1,0 +1,17 @@
+namespace TRNSPT_BAY2.TRNSPT_BAY2_DB;
+context FI_Tables {
+entity GL{
+		Key GL_No		: String(10) not null;
+		    Comp_Code	: String(10);
+		    Country		: String(20);
+		    Deb_Cre		: Double;
+};
+entity COPA{
+		Key Doc_No			: String(10) not null;
+		    GL_No        	: String(10);
+		    Country	     	: String(20);
+		    Comp_Code   	: String(10);
+		    Material        : String(20);
+		    Amount          : Double;
+};
+};

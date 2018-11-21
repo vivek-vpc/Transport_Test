@@ -1,0 +1,19 @@
+ID: TRNSPT_BAY2
+_schema-version: '2.0'
+version: 0.0.1
+
+modules:
+ - name: TRNSPT_BAY2_DB
+   type: hdb
+   path: TRNSPT_BAY2_DB
+   requires:
+    - name: hdi_TRNSPT_BAY2_DB
+
+resources:
+ - name: hdi_TRNSPT_BAY2_DB
+   parameters:
+      config:
+         schema: TRNSPT_BAY2_SCHEMA
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container

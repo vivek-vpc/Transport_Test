@@ -1,0 +1,12 @@
+{
+  "role": {
+    "name": "TRNSPT_BAY2.TRNSPT_BAY2_DB::Table_Role_g#",
+      "object_privileges":[
+			{
+			"name": "TRNSPT_BAY2.TRNSPT_BAY2_DB::FI_Tables.GL",
+			"type": "TABLE",
+			"privileges_with_grant_option": [ "SELECT" ]
+			}
+		]
+	}
+}
